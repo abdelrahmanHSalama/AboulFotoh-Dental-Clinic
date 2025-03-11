@@ -29,7 +29,7 @@
             property="og:url"
             content="https://abdelrahmanhsalama.github.io/AboulFotoh-Dental-Clinic/"
         />
-        <script src="assets/app.js" defer></script>
+        <script src="./assets/js/app.js" defer></script>
     </head>
     <body dir="rtl">
         <div id="black-container">
@@ -168,14 +168,16 @@
                     <h2>احجز الان</h2>
                     <form>
                         <label
-                            >الاسم <input type="text" name="name" required
+                            >الاسم
+                            <input type="text" name="name" id="name" required
                         /></label>
                         <label
-                            >الموبايل <input type="text" name="phone" required
-                        /></label>
-                        <label
-                            >الملاحظات
-                            <textarea name="message" rows="5"></textarea>
+                            >الشكوى
+                            <textarea
+                                name="message"
+                                rows="5"
+                                id="message"
+                            ></textarea>
                         </label>
                         <button
                             type="submit"
