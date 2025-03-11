@@ -50,7 +50,8 @@ button:hover {
     color: #9c9c9c;
 }
 
-#container {
+#container,
+#nav-container {
     width: 90vw;
 }
 
@@ -79,7 +80,6 @@ nav ul {
 nav li a {
     color: #9c9c9c;
     text-decoration: none;
-    position: relative;
     transition: opacity 0.25s ease-in-out;
 }
 
@@ -89,7 +89,6 @@ nav li a:hover {
 
 #logo {
     height: 100%;
-    margin-inline: auto;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -176,6 +175,10 @@ h1 {
     width: 80%;
 }
 
+#dr-mohamed {
+    text-align: center;
+}
+
 .gallery img {
     width: calc(20% - 4px);
 }
@@ -201,6 +204,7 @@ h1 {
 
 #appointment-section form label {
     display: flex;
+    flex-direction: column;
     gap: 10px;
     justify-content: space-between;
 }
@@ -228,7 +232,91 @@ footer {
 }
 
 @media (max-width: 768px) {
-    h1 {
-        color: red;
+    #nav-container {
+        width: 100vw;
+    }
+
+    nav {
+        height: min-content;
+        flex-direction: column;
+        position: static;
+        gap: 10px;
+        border-radius: 0;
+    }
+
+    #logo {
+        height: 100px;
+        position: static;
+        transform: translateX(0);
+        order: 1;
+    }
+
+    #nav-menu {
+        order: 2;
+    }
+
+    #social-icons {
+        order: 3;
+    }
+
+    #social-icons img {
+        height: 1.5rem;
+    }
+
+    #hero-section {
+        flex-direction: column;
+    }
+
+    #hero-two {
+        order: 1;
+    }
+
+    #hero-one {
+        order: 2;
+        text-align: center;
+        align-items: center;
+    }
+
+    #services-section,
+    #team-section,
+    #gallery-section,
+    #appointment-section {
+        gap: 0;
+    }
+
+    #services-subsection,
+    #team-subsection {
+        flex-direction: column;
+    }
+
+    .service img,
+    .team-member img {
+        width: 100%;
+    }
+
+    .team-member {
+        order: 2;
+    }
+
+    .dr-mahmoud {
+        order: 1;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #appointment-section form input,
+    #appointment-section form textarea {
+        width: 100%;
+    }
+
+    #appointment-section p {
+        text-align: center;
     }
 }
