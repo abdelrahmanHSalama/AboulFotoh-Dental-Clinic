@@ -227,6 +227,20 @@ h1 {
     color: #2fb3a8;
 }
 
+#appointment-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#location {
+    font-size: 1.25rem;
+}
+
+#location a {
+    color: 2fb3a8;
+}
+
 .center-button {
     align-self: center;
 }
