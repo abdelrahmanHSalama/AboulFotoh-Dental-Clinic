@@ -330,6 +330,7 @@ footer {
         align-items: center;
     }
 
+    #appointment-section form,
     #appointment-section form input,
     #appointment-section form textarea {
         width: 100%;
